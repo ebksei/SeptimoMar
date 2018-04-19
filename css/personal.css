@@ -1,0 +1,21 @@
+
+#cardLogin{
+	border: none;
+	border-top:30px solid #555;
+	border-bottom:30px solid #555;
+	min-width:250px;
+	background: rgba(255,255,255,0.6);
+	color:#fff;
+}
+
+
+.btn-primary{
+	background-color:#555;
+}
+.btn-primary:hover{
+	background-color:#777;
+}
+
+.logo-medium{
+	width:250px;
+}

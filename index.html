@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="h-100" lang="es"> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>7o Mar</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="scss/style.css">
+
+    <link rel="stylesheet" href="css/personal.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+<body ng-app="SeptimoMar" ng-controller="menuAppCtrl" class="h-100">
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html"> <i class="menu-icon fa fa-bell"></i>Novedades </a>
+                    </li>
+                    <li>
+                        <a href="index.html"> <i class="menu-icon fa fa-user"></i>Perfil </a>
+                    </li>
+                    <h3 class="menu-title">Personajes</h3>
+                    <li>
+                        <a href="index.html"> <i class="menu-icon fa fa-users"></i>Mis personajes </a>
+                    </li>
+                    <li id="menuCrearPersonaje">
+                        <a href="index.html"> <i class="menu-icon fa fa-plus"></i>Crear personaje </a>
+                    </li>
+                    <li>
+                        <a href="index.html"> <i class="menu-icon fa fa-search"></i>Buscar personaje </a>
+                    </li>
+                   
+                    <h3 class="menu-title">Crónicas</h3>                   
+                    <li>
+                        <a href="index.html"> <i class="menu-icon fa fa-plus"></i>Añadir sesión </a>
+                    </li>                   
+                    <li>
+                        <a href="index.html"> <i class="menu-icon fa fa-search"></i>Buscar sesión </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <div id="right-panel" class="right-panel h-100">
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-12">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu float-right">
+                                <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="content mt-3 h-100" ng-view>
+
+            <!-- AQUÍ SE CARGA EL CONTENIDO CON ANGULARJS -->
+
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/general/funciones.js"></script>
+
+
+   <!-- <script src="js/dashboard.js"></script>-->
+
+    <!--ANGULAR-->    
+    <script src="./js/lib/angular/angular.min.js" type="text/javascript"></script>
+    <script src="./js/lib/angular/angular-route.min.js" type="text/javascript"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/ctrl/novedadesCtrl.js"></script>
+    <script src="js/ctrl/loginCtrl.js"></script>
+    <script src="js/ctrl/personajeCtrl.js"></script>
+
+</body>
+</html>
